@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="scss/custom.css" />
+
+    <title>Hello, world!</title>
+
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-firestore.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyA8npHQ59LqqxfRc4xRQm8sptjTyTtrBT0",
+        authDomain: "test-fire-v8.firebaseapp.com",
+        projectId: "test-fire-v8",
+        storageBucket: "test-fire-v8.appspot.com",
+        messagingSenderId: "426139016342",
+        appId: "1:426139016342:web:22ee24c6ca97baebc9f6b7",
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#" id="nombreUsuario">BChat</a>
+        <div>
+          <button class="btn btn-primary" id="btnIngreso">Ingresar</button>
+          <button class="btn btn-danger" id="btnCerrarSesion">
+            Cerrar Sesión
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container py-3 container-chat" id="contenidoWeb">
+      <!-- <div class="text-start">
+        <span class="badge bg-info">Primary</span>
+      </div>
+      <div class="text-end">
+        <span class="badge bg-success">Primary</span>
+      </div> -->
+    </main>
+    <form class="fixed-bottom container mb-2" id="formulario">
+      <input type="text" class="form-control" placeholder="..." id="texto" />
+      <button class="btn btn-dark w-100 mt-2">Enviar</button>
+    </form>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>
